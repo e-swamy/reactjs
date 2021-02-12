@@ -1,0 +1,47 @@
+// Navbar CSS
+.sam_navbar {
+    background: linear-gradient(to top, #040404 0%, #151515 100%) !important;
+  
+    .navbar-nav .nav-item {
+      margin-right: 8px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      .nav-link {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        margin-right: 8px;
+        border-top: 2px solid transparent;
+        transition: all 0.3s;
+  
+        &::before {
+          content: "";
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 45%;
+          width: 100%;
+          height: 4px;
+          background: #fff;
+          border-radius: 6px;
+          box-shadow: 3px -1px 0 #ff004e, -3px 1px 0 #01f2eb;
+  
+          // clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+          // background: linear-gradient(to bottom,
+          //     rgba(255, 255, 255, 0.3) -50%,
+          //     rgba(255, 255, 255, 0) 90%);
+          // pointer-events: none;
+        }
+  
+        &:hover,
+        &.active {
+          &::before {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }

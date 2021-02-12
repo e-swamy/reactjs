@@ -1,0 +1,43 @@
+
+// Services
+.services {
+    position: relative;
+    background: #0c0c0c;
+  
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: #040404;
+      border-radius: 0.35rem;
+      text-align: center;
+      z-index: 2;
+  
+      .paint_shape {
+        position: absolute;
+        top: -50px;
+      }
+  
+      .card-body {
+        position: relative;
+        z-index: 1;
+  
+        .card-title i {
+          color: #ffffff;
+          font-size: 3.5rem;
+          transition: all 0.3s;
+          text-shadow: 4px -2px 0 #ff004e, -4px 1px 0 #01f2eb;
+        }
+  
+        .card-subtitle {
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+      }
+  
+      &:hover .card-title i {
+        text-shadow: 4px -2px 0 #01f2eb, -4px 1px 0 #ff004e;
+      }
+    }
+  }
+  

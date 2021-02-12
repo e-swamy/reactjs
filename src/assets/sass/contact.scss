@@ -1,0 +1,36 @@
+// Contact Us
+
+.contact_us {
+    color: #ffffff;
+    position: relative;
+    background: url('../images/world-map.png') no-repeat;
+  
+    .contact_content {
+      padding: 3rem 0;
+      position: relative;
+      z-index: 2;
+  
+      .contact-form .form-group {
+        .form-control {
+          font-size: 0.9rem;
+          height: auto;
+        }
+  
+        input,
+        textarea {
+          color: #ffffff;
+          background: #151515;
+          border: 1px dotted #151515;
+          padding: 15px;
+          border-radius: 25px;
+        }
+      }
+  
+      i {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 4px -2px 0 #ff004e, -4px 1px 0 #01f2eb;
+      }
+    }
+  }
+  

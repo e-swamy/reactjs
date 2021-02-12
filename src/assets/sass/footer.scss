@@ -1,0 +1,171 @@
+// Footer
+
+.footer_section {
+    position: relative;
+  
+    .svg-border-rounded {
+      position: relative;
+      color: #0a0a0a;
+  
+      svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3rem;
+        width: 100%;
+      }
+    }
+  
+    .footer {
+      background: #0a0a0a;
+  
+      ul.social-buttons {
+        position: relative;
+        z-index: 1;
+  
+        li a {
+          position: relative;
+          text-align: center;
+          font-size: 18px;
+          line-height: 44px;
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          color: #fff;
+          outline: 0;
+          overflow: hidden;
+          background-color: #b1b6b8;
+  
+          i {
+            position: relative;
+          }
+  
+          &:before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #ffffff;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+          }
+  
+          &:hover::before {
+            animation: nanu-animations 0.7s 1;
+            top: -10%;
+            left: -10%;
+          }
+  
+          &:hover i {
+            color: #00b5f0;
+          }
+        }
+      }
+  
+      p {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  
+  @keyframes nanu-animations {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+  
+    50% {
+      left: 10%;
+      top: -30%;
+    }
+  
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+  }
+  
+  .footer ul.social-buttons li a.facebook:focus,
+  .footer ul.social-buttons li a.facebook:hover,
+  .footer ul.social-buttons li a.twitter:focus,
+  .footer ul.social-buttons li a.twitter:hover,
+  .footer ul.social-buttons li a.linkedin:focus,
+  .footer ul.social-buttons li a.linkedin:hover {
+    color: #ffffff;
+    background-color: #00b5f0;
+    text-shadow: 1px 1px 0px #173062, 2px 2px 0px #173062, 3px 3px 0px #173062,
+      4px 4px 0px #173062, 5px 5px 0px #173062, 6px 6px 0px #173062,
+      7px 7px 0px #173062, 8px 8px 0px #173062, 9px 9px 0px #173062,
+      10px 10px 0px #173062, 11px 11px 0px #173062, 12px 12px 0px #173062,
+      13px 13px 0px #173062, 14px 14px 0px #173062, 15px 15px 0px #173062,
+      16px 16px 0px #173062, 17px 17px 0px #173062, 18px 18px 0px #173062,
+      19px 19px 0px #173062, 20px 20px 0px #173062, 21px 21px 0px #173062,
+      22px 22px 0px #173062, 23px 23px 0px #173062, 24px 24px 0px #173062,
+      25px 25px 0px #173062, 26px 26px 0px #173062, 27px 27px 0px #173062,
+      28px 28px 0px #173062, 29px 29px 0px #173062, 30px 30px 0px #173062,
+      31px 31px 0px #173062, 32px 32px 0px #173062, 33px 33px 0px #173062,
+      34px 34px 0px #173062, 35px 35px 0px #173062, 36px 36px 0px #173062,
+      37px 37px 0px #173062, 38px 38px 0px #173062, 39px 39px 0px #173062,
+      40px 40px 0px #173062, 41px 41px 0px #173062, 42px 42px 0px #173062,
+      43px 43px 0px #173062, 44px 44px 0px #173062, 45px 45px 0px #173062,
+      46px 46px 0px #173062, 47px 47px 0px #173062, 48px 48px 0px #173062,
+      49px 49px 0px #173062, 50px 50px 0px #173062, 51px 51px 0px #173062;
+  }
+  
+  .footer ul.social-buttons li a.google:focus,
+  .footer ul.social-buttons li a.google:hover {
+    color: #ffffff;
+    background-color: #00b5f0;
+    text-shadow: 1px 1px 0px #621717, 2px 2px 0px #621717, 3px 3px 0px #621717,
+      4px 4px 0px #621717, 5px 5px 0px #621717, 6px 6px 0px #621717,
+      7px 7px 0px #621717, 8px 8px 0px #621717, 9px 9px 0px #621717,
+      10px 10px 0px #621717, 11px 11px 0px #621717, 12px 12px 0px #621717,
+      13px 13px 0px #621717, 14px 14px 0px #621717, 15px 15px 0px #621717,
+      16px 16px 0px #621717, 17px 17px 0px #621717, 18px 18px 0px #621717,
+      19px 19px 0px #621717, 20px 20px 0px #621717, 21px 21px 0px #621717,
+      22px 22px 0px #621717, 23px 23px 0px #621717, 24px 24px 0px #621717,
+      25px 25px 0px #621717, 26px 26px 0px #621717, 27px 27px 0px #621717,
+      28px 28px 0px #621717, 29px 29px 0px #621717, 30px 30px 0px #621717,
+      31px 31px 0px #621717, 32px 32px 0px #621717, 33px 33px 0px #621717,
+      34px 34px 0px #621717, 35px 35px 0px #621717, 36px 36px 0px #621717,
+      37px 37px 0px #621717, 38px 38px 0px #621717, 39px 39px 0px #621717,
+      40px 40px 0px #621717, 41px 41px 0px #621717, 42px 42px 0px #621717,
+      43px 43px 0px #621717, 44px 44px 0px #621717, 45px 45px 0px #621717,
+      46px 46px 0px #621717, 47px 47px 0px #621717, 48px 48px 0px #621717,
+      49px 49px 0px #621717, 50px 50px 0px #621717, 51px 51px 0px #621717;
+  }
+  
+  .facebook {
+    background: linear-gradient(135deg, #3b5998 0%, #173062 100%);
+  }
+  
+  .twitter {
+    background: linear-gradient(135deg, #55acee 0%, #2274b2 100%);
+  }
+  
+  .linkedin {
+    background: linear-gradient(135deg, #0e87bf 0%, #075e86 100%);
+  }
+  
+  .google {
+    background: linear-gradient(135deg, #ae2222 0%, #dd4b39 100%);
+  }
+  
+  .beat {
+    color: red;
+    -webkit-animation: beat 0.3s infinite alternate;
+    animation: beat 0.3s infinite alternate;
+  }
+  
+  @keyframes beat {
+    to {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+  }
+  
