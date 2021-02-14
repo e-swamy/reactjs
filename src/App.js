@@ -30,7 +30,7 @@ export default class App extends Component {
         <Router basename='/'>
           <div className="App">
             <Switch>
-              <Route exact path="/reactjs" component={Home} />
+              <Route exact path="/" component={Home} />
               {/* <Route path='/reactjs*' component={PageNotFound} /> */}
             </Switch>
           </div>
