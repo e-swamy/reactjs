@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Preloader from './components/shared/Preloader'
 import PageNotFound from './components/content/PageNotFound'
@@ -31,10 +31,7 @@ export default class App extends Component {
           <div className="App">
             <Switch>
               <Route exact path="/reactjs" component={Home} />
-              {/* <Route path='/reactjs*' component={PageNotFound} /> */}
-              {/* <Route path='/404' component={PageNotFound} />
-              <Redirect to="/404" /> */}
-              <Route component = { PageNotFound }/>
+              <Route path='/reactjs*' component={PageNotFound} />
             </Switch>
           </div>
         </Router>
