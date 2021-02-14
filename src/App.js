@@ -31,7 +31,7 @@ export default class App extends Component {
           <div className="App">
             <Switch>
               <Route exact path="/reactjs" component={Home} />
-              <Route exact path='/reactjs*' component={PageNotFound} />
+              <Route path='*' component={PageNotFound} />
             </Switch>
           </div>
         </Router>
